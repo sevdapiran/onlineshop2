@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title> Online Shope </title>
+ <link rel="icon" type="x-icon" href="icon2.png">
+ <meta charset="UTF-8">
+ <meta name="keywords" content="online-shop, shopping">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #18191E;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #18191E;  /* creates padding around scroll thumb */
+}
+
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size:15px;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:#18191E;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #18191E;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #E0E0E0; color:#18191E;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ .clothes{
+     position:relative;
+     right:30px;
+     top:-180px;
+     z-index:-1;
+     border:5px solid #E1B692;
+     padding:15px;
+    
+}
+ .header{
+     Position:relative;
+     right:-20px;
+     top:260px;
+     text-align:center;
+}
+.man{
+  position:relative;
+  top:-250px;
+  left:95px;  
+  animation-name: example1;
+  animation-duration: 2s;
+}
+
+@keyframes example1 {
+  0%   {left:-300px;top:-250px;}
+  100%  {left:95px; top:-250px;}
+}
+.woman{
+position:relative;
+  top:-750px;
+  left:1020px;
+  animation-name: example2;
+  animation-duration: 2s;
+}
+@keyframes example2 {
+  0%   {left:1400px; top:-750px;}
+  100%  {left:1020px; top:-750px;}
+}
+
+input[type=text]{
+   width: 80px;
+  box-sizing: border-box;
+  border: 1px solid ;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: #E0E0E0;
+  padding: 1px;
+  margin-top:14px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width:150px;
+}
+ .icon{
+  color:white;
+  position: relative;
+  top:-680px;
+  left:320px;
+  word-spacing:192px;
+ }
+.texticon {
+ color:white;
+ font-size:12px;
+ display:inline-block;
+ position:relative;
+ top:-680px;
+ left:218px;
+}
+
+
+.texticon p {display:inline;
+padding:74px;
+}
+
+.kadr1{
+  border:0px solid #18191E;
+  border-radius:35% 0 0 35%; 
+ position:relative;
+  top:-300px;
+  left:750px;
+}
+
+.kadr2{
+ border:0px solid white;
+  border-radius:0 35% 35% 0;
+ position:relative;
+  top:160px;
+ right:650px;  
+}
+.matn1{
+   font-size:18px;
+   font-family:Sans-serif;
+   color:white;
+   position:relative;
+   top:-600px;
+   left:-300px;
+   text-align:center;
+   letter-spacing:5px;
+}
+.zir1{font-family:Sans-serif;
+	position:relative;
+	top:-580px;
+	left:-300px;
+	font-size:12px;
+	text-align:center;
+	letter-spacing:1px;
+	color:#E1B692;
+}
+.matn2{
+   font-size:18px;
+   font-family:Sans-serif;
+   color:white;
+   position:relative;
+   top:-260px;
+   left:300px;
+   text-align:center;
+   letter-spacing:5px;
+}
+.zir2{font-family:Sans-serif;
+	position:relative;
+	top:-240px;
+	left:300px;
+	font-size:12px;
+	text-align:center;
+	letter-spacing:1px;
+	color:#E1B692;
+}
+
+
+.flex-container {
+  border-radius: 20px; 
+  width:100%;
+   height:300px;
+  owerflow:visible;
+  owerflow-x:scroll;
+  white-space: nowrap;
+  justify-content: center;
+  background-color:#18191E;
+  position:relative;
+  top:-480px;  
+}
+
+.flex-container .pic{
+  display:inline-block;
+  *display:inline;/* For IE7*/
+  margin: 2px;
+  cursor: pointer;
+  border:0px;
+  border-radius:50%;
+  width:14%;
+  height:70%; 
+  position:relative;
+  top:70px;
+} 
+.flex-container .pic:hover {
+  opacity:80%;
+}
+
+.flex-container::-webkit-scrollbar{
+    width: 10px;
+}
+.flex-container::-webkit-scrollbar-track {
+    background-color: #18191E;
+    border-radius: 20px;
+}
+.flex-container::-webkit-scrollbar-thumb {
+    background-color: #E0E0E0;   
+    border-radius: 20px;       
+    border: 1px solid #18191E;  
+}
+</style>
+</head>
+
+<body style="background-color:#1F2027    ;">
+
+ <ul>
+   <li><a href="#home">Home</a></li>
+   <li class="dropdown"><a class="dropbtn">Men</a>
+      <div class="dropdown-content">
+      <a href="#">Spring 2022 Clothing</a>      
+      <a href="#">Winter 2021 Clothing</a>      
+      <a href="#">Outer Wear</a>
+      <a href="#">Sport Wears</a>
+      <a href="#">T-Shirts & Polos</a>
+      <a href="#">Shoes</a>
+    </div>
+   </li>
+   <li class="dropdown"><a class="dropbtn">Women</a>
+      <div class="dropdown-content">
+      <a href="file:///C:/Users/MNB/Desktop/site%20ma%20-%20Copy/women2.html">Spring 2022 Clothing</a>      
+      <a href="#">Winter 2021 Clothing</a>      
+      <a href="#">Outer Wear</a>
+      <a href="#">Sport Wears</a>
+      <a href="#">Pants & Skrits</a>
+      <a href="#">Dresses</a>
+      <a href="#">Shoes</a>
+    </div>
+   </li>
+   <li class="dropdown"><a class="dropbtn">Kids & Baby</a>
+      <div class="dropdown-content">
+      <a href="#">Girls</a>      
+      <a href="#">Boys</a>      
+      <a href="#">New Born</a>
+    </div>
+   </li>
+   <li class="dropdown"><a class="dropbtn">Accessories</a>
+      <div class="dropdown-content">
+      <a href="#">Sun-Glasses</a>      
+      <a href="#">Watches</a>      
+      <a href="#">Perfume</a>
+      <a href="#">Belts</a>
+      <a href="#">Hats</a>
+      <a href="#">Suckes</a>
+      <a href="#">Men Bags</a>
+      <a href="#">Women Bags</a>
+      <a href="#">Back-Packs</a>
+      <a href="#">Travel Bags</a>
+    </div>
+   </li>
+   <li style="float:right;"><a href="file:///C:/Users/MNB/Desktop/site%20ma%20-%20Copy/login.html" target="-blanck">Login</a></li>
+   <li style="float:right;">
+   <form> 
+   <input type="text" name="search" placeholder="search..."> 
+   
+   </form>
+     </li>
+  
+</ul>
+
+
+
+ <div class="header">
+ <h5 style="color:#E1B692;font-size:150%;font-family:serif;">Minimal Clothing </h5>
+ <h1 style="color:white;font-family:Courier;font-size:250%;">  Stay in Style Forever </h1>
+ <h5 style="color:#E1B692;font-size:150%;font-family:serif;">_____ Shop Now _____</h5>
+ </div>
+ <img  class="man" src="1.jpg" alt="man" width="19%" height="15%">
+ <img class="clothes" src="6.jpeg" alt="closet" width="65%" height="65%">
+ <img  class="woman" src="2.jpg" alt="woman" width="17%" height="15%">
+
+ <div class="icon">
+    <i class="material-icons"  style="font-size:26px;">public</i>
+    <i class="material-icons" style="font-size:26px;">cases</i>
+    <i class="material-icons"  style="font-size:26px;">paid</i>
+    <i class="material-icons" style="font-size:26px;">beenhere</i>
+ </div>
+ 
+<div class="texticon" style="display:inline;">
+  <p> Send Worldwide </p>
+  <p> Free Shopping </p>
+  <p> Money Back</p>
+  <p>24H Support</p>
+</div>
+
+
+
+<p class="off" style="position:relative; top:-415px; left:560px; color:#E1B692; font-family:Sans-serif; font-size:18px; z-index:1;">__Off up to 30% __</span></p>
+
+<div class="flex-container" style="overflow-x:scroll; overflow-y:hidden; white-space:nowrap;"> 	
+ 	<img class="pic" src="10.jpeg" width="24%" height="75%" >	 	
+	<img class="pic" src="8.jpg" width="32%" height="75%">
+  	<img class="pic" src="11.jpg" width="32%" height="75%" > 
+	<img class="pic" src="12.jpg" width="32%" height="75%" >
+	<img class="pic" src="9.jpg" width="32%" height="75%" >
+	<img class="pic" src="17.jpg" width="32%" height="75%" >
+	<img class="pic" src="18.jpg" width="32%" height="75%" >
+	<img class="pic" src="19.jpg" width="32%" height="75%" >
+	<img class="pic" src="20.jpg" width="32%" height="75%" >
+	<img class="pic" src="21.jpg" width="32%" height="75%" >
+	<img class="pic" src="22.jpg" width="32%" height="75%" >
+	<img class="pic" src="23.jpg" width="32%" height="75%" >
+	<img class="pic" src="24.jpg" width="32%" height="75%" >
+	<img class="pic" src="25.jpg" width="32%" height="75%" >  
+</div>
+
+
+
+
+<div>
+<img  class="kadr1" src="16.jpg"  width="45%" height="15%">
+<img  class="kadr2" src="14.jpg"  width="46%" height="25%">
+<p class="matn1">WOMEN <br>PRODUCTS <br></p>
+<hr style="width:6%;text-align:center;position:relative;top:-600px;left:-302px;">
+<p class="zir1"> The Women's Winter 2022 Collection Disigned by Sevda & Qazal.<br> as the dream begins, we are in here</p>
+<p class="matn2">MEN <br>PRODUCTS <br></p>
+<hr style="width:6%;text-align:center;position:relative;top:-260px;left:300px;">
+<p class="zir2"> The Men's Winter 2022 Collection Expresses Absolute Ease.<br> combining hybrid tailoring, and soft, fresh textures</p>
+</div>
+
+<hr style="width:100%;text-align:center;color:#E0E0E0">
+
+<div style="font-size:12px; color:white;font-family:serif;position:relative;left:50px;top:30px">
+<p>Contact Us :</p>
+<i class="material-icons"  style="font-size:15px;">email</i> <p style="display:inline;position:relative;top:-5px; right:-10px;"> onlineshop@gmail.come</p><br>
+<i class="material-icons"  style="font-size:15px;">telegram</i><p style="display:inline;position:relative;top:-5px; right:-10px;"> @ online_shop</p> <br>
+<i class="material-icons"  style="font-size:15px;">whatsapp</i> <p style="display:inline;position:relative;top:-5px; right:-10px;"> (+1) 888-291-3634</p><br>
+<i class="material-icons"  style="font-size:15px;">place</i> <p style="display:inline;position:relative;top:-5px; right:-10px;"> 1480 Maryland Avenue, Tampa, FL, Florida,  33610</p><br>
+</div>
+
+<div style="position:relative; top:-84px; left:550px;font-size:12px; color:white;font-family:serif;">
+<p>About Us :</p>
+<p> We are a online-shop in Florida state, USA. <br> we started in 2018.</p>
+</div>
+
+<div style="position:relative; top:-150px; left:1050px;font-size:12px; color:white;font-family:serif;">
+<p>Contact Suport : </p>
+<p style="line-height:1.5;">(+1) 888-291-3630 <br>(+1) 888-291-3631 <br>(+1) 888-291-3632 <br> (+1) 888-291-3633</p>
+
+</div>
+
+
+</body>
+</html>
